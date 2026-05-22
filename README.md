@@ -18,7 +18,6 @@ Las pruebas fueron desarrolladas como parte de un plan de pruebas formal que inc
 |---|---|---|
 | Python | 3.13 | Lenguaje de programación |
 | Selenium WebDriver | Latest | Automatización del navegador |
-| ChromeDriver | Auto (webdriver-manager) | Traductor entre Selenium y Chrome |
 | Pytest | 9.0.3 | Framework de ejecución de pruebas |
 | pytest-html | 4.2.0 | Generación de reportes HTML |
 | webdriver-manager | Latest | Gestión automática de ChromeDriver |
@@ -28,7 +27,7 @@ Las pruebas fueron desarrolladas como parte de un plan de pruebas formal que inc
 ## 🔗 Cómo funciona la automatización
 
 ```
-Tu código Python
+  Código Python
       │
       ▼
 Selenium WebDriver  →  convierte instrucciones en peticiones HTTP (protocolo WebDriver)
@@ -51,8 +50,7 @@ Google Chrome       →  ejecuta las acciones reales en pantalla
 
 ```
 Demo-Test/
-├── test_login.py        # Pruebas de inicio de sesión con credenciales válidas e inválidas
-├── test_logout.py       # Prueba de cierre de sesión
+├── test_login_logout.py     # Pruebas de inicio de sesión con credenciales válidas e inválidas y Prueba de cierre de sesión
 ├── test_catalogo.py     # Pruebas de filtrado por categoría y detalle de producto
 ├── test_carrito.py      # Pruebas de carrito: agregar, eliminar, total y Place Order
 ├── requirements.txt     # Dependencias del proyecto
@@ -79,16 +77,9 @@ Demo-Test/
 
 ---
 
-## ⚙️ Instalación y configuración
+## ⚙️ Configuración
 
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
-```
-
-### 2. Crear entorno virtual
+### 1. Crear entorno virtual
 
 ```bash
 python -m venv env
@@ -104,13 +95,13 @@ Activar en Mac/Linux:
 source env/bin/activate
 ```
 
-### 3. Instalar dependencias
+### 2. Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Crear cuenta de prueba
+### 3. Crear cuenta de prueba
 
 Antes de ejecutar las pruebas, registrar manualmente una cuenta en [demoblaze.com](https://www.demoblaze.com) con:
 - **Usuario:** `testuser20251`
